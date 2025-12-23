@@ -17,7 +17,7 @@ export async function POST() {
     const intentRes = await paymongo.post("/payment_intents", {
       data: {
         attributes: {
-          amount: 10000,
+          amount: 100000, // 1000.00 PHP
           currency: "PHP",
           payment_method_allowed: ["card"],
           description: "Demo Test Payment",
